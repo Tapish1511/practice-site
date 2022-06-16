@@ -1,0 +1,151 @@
+/*  #4FABA1    */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.setting-el{
+    position: fixed;
+    left: 0;
+    top: 25%;
+    background-color: white;
+    z-index: 100;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+}
+/*********************************Nav Secondary**********************************************/
+.secondary-head{
+    background-color: #4FABA1;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10%;
+    color: white;
+    font-size: 0.8em;
+}
+.secondary-head>div{
+    display: flex;
+    align-items: center;
+}
+.contact-info>div{
+    margin-left: 20px;
+    display: flex;
+}
+.contact-info>div>p{
+    padding: 5px;
+}
+
+.follow-us>p{
+    margin: 0 5px;
+}
+.follow-us>p>a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 0 5px;
+}
+#lang{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#lang>option{
+    background-color: black;
+    display: block;
+
+}
+@media screen and (max-width: 1024px) {
+    .secondary-head{
+        padding: 5px 7%;
+    }
+}
+/*******************************************Primary Nav***************************************/
+.primary-head{
+    padding: 20px 10%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigation-bar{
+    grid-column: 2/5;
+}
+.navigation-bar>ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navigation-bar li{
+    /*margin: 0 10px;*/
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: gray;
+}
+.navigation-bar a:hover{
+    color: black;
+}
+
+.donate-el>button{
+    background-color: #4FABA1;
+    border: none;
+    padding: 10px 15px;
+    color:white;
+    font-weight: 400;
+}
+.donate-el>button:hover{
+    background-color: rgba(79, 171, 161, 0.9);
+    cursor: pointer;
+}
+@media screen and (max-width: 1025px) {
+    .primary-head{
+        padding: 20px 7%;
+    }
+}
+
+
+/****************************************Intro****************************************************/
+#intro-el{
+    background: url("../images/scared-girl.png") center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    padding: 8% 10%;
+    align-items: center;
+}
+.intro-el-text{
+    width: 65%;
+    padding: 20px;
+    margin: 20px 5%;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.5;
+}
+.arrow{
+    position: absolute;
+    left: 10%
+}
+.right-arrow{
+    position: absolute;
+    right: 10%;
+}
+.intro-el-text>h1{
+    font-size: 2.7em;
+    margin: 10px;
+}
+.intro-el-text>p{
+    margin: 15px 10px;
+}
+
+
