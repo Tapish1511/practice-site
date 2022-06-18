@@ -407,6 +407,7 @@ img{
 .footer-el input{
     border-radius: 2px 0 0 2px;
     border: none;
+    outline: none;
 }
 
 .footer-el:nth-child(4) a{
@@ -415,6 +416,9 @@ img{
     background-color: #4FABA1;
     padding: 7px 14px;
     border-radius: 0 2px 2px 0;
+}
+.footer-el:last-child{
+    line-height: 2.2;
 }
 @media screen and (max-width: 1025px) {
     .footer-primary{
