@@ -15,12 +15,17 @@ img{
 .setting-el{
     position: fixed;
     left: 0;
-    top: 25%;
+    top: 50%;
     background-color: white;
     z-index: 100;
     font-size: 1.2em;
     text-align: center;
     padding: 10px;
+}
+@media screen and (max-width: 1025px) {
+    body{
+        font-size: .8em;
+    }
 }
 /*********************************Nav Secondary**********************************************/
 .secondary-head{
@@ -244,6 +249,17 @@ img{
     grid-template-rows:auto auto auto auto auto;
     justify-content: space-between;
     border: 1px solid rgba(211, 211, 211, 0.45);
+    position: relative;
+}
+.card-el::before{
+    content: "24MAY";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #46aab4;
+    padding: 20px 10px;
+    font-size: .9em;
 }
 .image-content{
     width: 100%;
@@ -251,7 +267,7 @@ img{
     display: flex;
     color: #a2a2a2;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 10px 5%;
 }
 
 .image-src-el>img{
@@ -264,9 +280,11 @@ img{
 .image-content>div>p:first-child{
     padding: 0 15px 0 0;
     border-right: 2px solid #afafaf;
+
 }
 .image-content>div>p:last-child{
     padding: 0 0 0 15px;
+
 }
 .card-el>h2, .card-el>p{
     padding: 15px;
@@ -285,12 +303,11 @@ img{
     font-weight: bold;
 }
 @media screen and (max-width: 1025px){
-    .cards{
-        padding-left: 7%;
-        padding-right: 7%;
-    }
     #Blogs{
         padding: 10px 7%;
+    }
+    .image-src-el>img{
+        height: 150px;
     }
 }
 
@@ -347,7 +364,7 @@ img{
 }
 .footer-el>h2>span{
     border-bottom: 3px solid #46aab4;
-    padding: 10px 0;
+    padding-bottom: 10px;
 }
 
 .footer-el:last-child>h2{
@@ -367,6 +384,10 @@ img{
 }
 .footer-large-el>ul>li{
     padding-bottom: 5px;
+}
+.footer-large-el>ul>li>a{
+    text-decoration: none;
+    color: white;
 }
 .footer-large-el>ul>li::before{
     content: '\203A'" ";
@@ -388,7 +409,7 @@ img{
     border: none;
 }
 
-.footer-el a{
+.footer-el:nth-child(4) a{
     text-decoration: none;
     color: white;
     background-color: #4FABA1;
@@ -398,6 +419,11 @@ img{
 @media screen and (max-width: 1025px) {
     .footer-primary{
         padding: 20px 7% 5%;
+    }
+
+    .footer-large-el{
+        padding: 0 1.5em;
+
     }
 }
 /****************************************Secondary footer***************************************************/
@@ -411,6 +437,12 @@ img{
 .footer-secondary a{
     color: white;
     padding-left: 10px;
+}
+@media screen and (max-width: 1025px) {
+    .footer-secondary{
+        padding: 20px 7%;
+        font-size: .8em;
+    }
 }
 
 
