@@ -61,6 +61,7 @@ img{
     background-color: transparent;
     border: none;
     color: white;
+    outline: none;
 }
 
 #lang>option{
